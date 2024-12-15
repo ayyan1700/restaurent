@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        padding: 0%;
+        margin: 0%;
+    }
+  .container{
+    width: 100%;
+    height: 100vh;
+    background: url(https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        background-size: cover;
+        animation: change 15s infinite ease-in-out;
+        position: relative;
+  }
+
+  @keyframes change{
+        0%{
+            background: url(https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)rgb(34, 32, 32);
+            background-blend-mode: multiply;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
+        33%{
+            background: url(https://images.pexels.com/photos/696218/pexels-photo-696218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)rgb(34, 32, 32);
+            background-blend-mode: multiply;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
+        66%{
+            background: url(https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) rgb(34, 32, 32);
+            background-blend-mode: multiply;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
+        100%{
+            background: url(https://images.pexels.com/photos/776538/pexels-photo-776538.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) rgb(34, 32, 32);
+            background-blend-mode: multiply;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
+    }
+
+
+
+
+
+
+
+
+  .header{
+        display: flex;
+        width: 100%;
+        height: 5vh;
+      
+        background: rgba(255, 255, 255, 0.075); 
+    }
+    .fe{
+        font-size: 0.7vw;
+        margin-left: 20vw;
+        margin-top: 0.9vw;
+        margin-right: 0.5vw;
+        color: white;
+       
+    }
+    .fe:hover{
+        color: rgb(233, 209, 73);
+    }
+    .he:hover{
+        color: rgb(233, 209, 73);
+    }
+    .header>h1:hover{
+        color: rgb(233, 209, 73);
+    }
+    .header>h2:hover{
+        color: rgb(233, 209, 73);
+    }
+    .header>h3:hover{
+        color: rgb(233, 209, 73);
+    }
+    .he{
+        font-size: 0.7vw;
+        margin-left: 11vw;
+        margin-top: 1vw;
+        margin-right: 0.5vw;
+        color: white;
+    }
+    .header>h1{
+
+         font-size: 0.7vw;
+         margin-top: 0.8vw;
+         color: white;
+         font-weight: lighter;
+         
+    }
+    .header>h2{
+         font-size: 0.7vw;
+         margin-top: 0.8vw;
+         color: white;
+         font-weight: lighter;
+        
+    }
+    .header>h3{
+         font-size: 0.7vw;
+         margin-left: 14vw;
+         margin-top: 0.8vw;
+         color: white;
+         font-weight: lighter;
+    } 
+
+
+
+
+
+
+
+
+    .main{
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+      
+   
+      
+    }
+    .main>h1{
+         color: rgb(233, 209, 73);
+         font-size: 1.9vw;
+         margin-left: 20vw;
+         font-family: "Ballet", cursive;
+             font-optical-sizing: auto;
+           font-weight: 400;
+             font-style: normal;
+    }
+    .link{
+        text-decoration: none;
+        color: white;
+        font-size: 0.9vw;
+        margin-left: 13vw;
+        position: relative;
+        z-index: 1;
+        padding: 0.5vw;
+        overflow: hidden;
+       
+    }
+    .link::after{
+        content: '';
+          width: 100%;
+          border: 1px solid rgb(233, 209, 73);
+          
+          position: absolute;
+          z-index: -1;
+          bottom: 0;
+          left: 0;
+          transform: translateX(100%);
+    }
+    .link:hover::after{
+        transform: translateX(0%);
+        transition: 0.4s;
+    }
+    
+    
+    .li{
+        text-decoration: none;
+        color: white;
+        font-size: 0.9vw;
+        margin-left: 2vw;
+        position: relative;
+        z-index: 1;
+        padding: 0.5vw;
+        overflow: hidden;
+    }
+    .li::after{
+        content: '';
+          width: 100%;
+          border: 1px solid rgb(233, 209, 73);
+         
+          position: absolute;
+          z-index: -1;
+          bottom: 0;
+          left: 0;
+          transform: translateX(100%);
+    }
+    .li:hover::after{
+        transform: translateX(0%);
+        transition: 0.4s;
+    }
+    
+    .hum{
+        border :1px solid black;
+        padding: 0.6vw;
+        font-size: 1vw;
+        background: rgb(233, 209, 73);
+        color: black;
+        margin-left: 1.8vw;
+        border-radius: 0.5vw;
+        
+    }
+    .hum:hover{
+     opacity: 0.5;
+    }
+
+
+   .mid{
+    width: auto;
+    border: 0.5px solid rgba(255, 255, 255, 0.233);
+    
+   }
+
+
+     .contain{
+        width: 100%;
+        height: 44vh;
+        text-align: center;
+       align-content: center;
+     }
+     .contain>h1{
+            font-size: 4vw;
+            color:rgb(233, 209, 73) ;
+            font-family: "Ballet", cursive;
+             font-optical-sizing: auto;
+           font-weight: 400;
+             font-style: normal;
+             margin-bottom: -1vw;
+     }
+     .contain>h2{
+            font-size: 4vw;
+            color: white;
+            font-family: "Rouge Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+     }
+   
+      .middle{
+        width:auto;
+        margin-top: 2vh;
+        border: 0.5px solid rgba(255, 255, 255, 0.233);
+       
+      }
+
+    
+
+
+
+
+
+
+
+      .card{
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        margin-top: -40vh;
+       
+        
+      }
+      .card1{
+        
+        width: 20%;
+        height: 40%;
+        text-align: center;
+      }
+      .card1>img{
+           width: 6vw;
+           height: 6vw;
+           border-radius: 50%;
+      }
+      .card2>img{
+           width: 6vw;
+           height: 6vw;
+           border-radius: 50%;
+      }
+      .card3>img{
+           width: 6vw;
+           height: 6vw;
+           border-radius: 50%;
+      }
+      .card4>img{
+           width: 6vw;
+           height: 6vw;
+           border-radius: 50%;
+      }
+      .card2{
+       
+        width: 20%;
+        height: 40%;
+        text-align: center;
+      }
+      .card3{
+    
+        width: 20%;
+        height: 40%;
+        text-align: center;
+      }
+      .card4{
+    
+        width: 20%;
+        height: 40%;
+        text-align: center;
+      }
+      .card1>h1{
+          font-size: 1.2vw;
+          margin-top: 1vh;
+          color: white;
+      }
+      .card2>h1{
+        font-size: 1.2vw;
+          margin-top: 1vh;
+          color: white;
+    }
+    .card3>h1{
+        font-size: 1.2vw;
+          margin-top: 1vh;
+          color: white;
+    }
+    .card4>h1{
+        font-size: 1.2vw;
+          margin-top: 1vh;
+          color: white;
+    }
+    .card1>h2{
+        font-size: 0.9vw;
+        font-weight: lighter;
+        color: white;
+    }
+    .card2>h2{
+        font-size: 0.9vw;
+        font-weight: lighter;
+        color: white;
+    }
+    .card3>h2{
+        font-size: 0.9vw;
+        font-weight: lighter;
+        color: white;
+    }
+    .card4>h2{
+        font-size: 0.9vw;
+        font-weight: lighter;
+        color: white;
+    }
+    .card1>img:hover{
+        opacity: 0.5;
+    }
+    .card2>img:hover{
+        opacity: 0.5;
+    }
+    .card3>img:hover{
+        opacity: 0.5;
+    }
+    .card4>img:hover{
+        opacity: 0.5;
+    }
+    .card1>h1:hover{
+        color: rgb(233, 209, 73);
+    }
+    .card1>h2:hover{
+        color: rgb(233, 209, 73);
+    }
+    .card2>h1:hover{
+        color: rgb(233, 209, 73);
+    }
+    .card2>h2:hover{
+        color: rgb(233, 209, 73);
+    }
+    .card3>h1:hover{
+        color: rgb(233, 209, 73);
+    }
+    .card3>h2:hover{
+        color: rgb(233, 209, 73);
+    }
+    .card4>h1:hover{
+        color: rgb(233, 209, 73);
+    }
+    .card4>h2:hover{
+        color: rgb(233, 209, 73);
+    }
+    
+
+
+
+
+      .great{
+        display: grid;
+        margin-top: 5vw;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 30vh 30vh 30vh ;
+        gap: 2vw;
+      }
+      
+        .at1{
+            background: url(https://images.unsplash.com/photo-1652195960911-c9f55224bd89?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-size: cover;
+          grid-row: 1/3;
+          margin-left: 20vw;
+          margin-right: -5vw;
+          margin-bottom: 7vh;
+        }
+        .at2{
+            background: url(https://img.freepik.com/free-photo/male-chef-kitchen-pouring-food-plate-from-frying-pan_23-2149646216.jpg?t=st=1734253647~exp=1734257247~hmac=0048bda4e37f2c13bf00ad7aadeb6409da8613f10062ee29c8e755ba7f83da53&w=740);
+            background-size: cover;
+            grid-row: 1/3;
+            margin-top: 5vh;
+            margin-right: 10vw;
+            margin-left: 4vw;
+        }
+        .at3{
+            grid-row: 1/3;
+            margin-left: -11vw;
+            margin-right: 20vw;
+            
+        }
+
+        .at3>h1{
+            margin-top: 3vw;
+            font-size: 3vw;
+            color: rgb(177, 136, 24);
+            font-family: "Ballet", cursive;
+             font-optical-sizing: auto;
+           font-weight: 700;
+           letter-spacing: 0.4vw;
+             font-style: normal;
+             margin-bottom: -1vw;
+        }
+        .at3>h2{
+            font-size: 3vw;
+            margin-top: -3vw;
+            color: rgba(0, 0, 0, 0.801);
+        }
+        .at3>h3{
+            font-size: 3vw;
+            color: rgba(0, 0, 0, 0.801);
+            margin-top: -0.3vw;
+        }
+        .at3>h4{
+            font-size: 1vw;
+            margin-top: 1.6vw;
+            line-height: 1.8vw;
+            word-spacing: 1px;
+            font-weight: lighter;
+            color: rgba(0, 0, 0, 0.61);
+        }
+        .at3>h5{
+            font-size: 1.3vw;
+            margin-top: 2vw;
+          
+        }
+        .at3>h6{
+            font-size: 2.5vw;
+            margin-top: 0.4vw;
+          color:  rgb(177, 136, 24);
+        }
+       
+
+
+
+
+        .at4{
+             grid-column: 1/4;
+             margin-left: 20vw;
+             margin-right: 20vw;
+             display: flex;
+             margin-top: 2vw;
+             
+            
+        }
+         .at4>h1{
+            font-size: 3vw;
+            font-weight:500;
+            color:  rgb(177, 136, 24);
+            
+         }
+         .at4>h2{
+            font-size: 3vw;
+            font-weight:500;
+            margin-left: 9vw;
+            color:  rgb(177, 136, 24);
+         }
+         .at4>h3{
+            font-size: 3vw;
+            font-weight:500;
+            margin-left: 8vw;
+            color:  rgb(177, 136, 24);
+         }
+         .at4>h4{
+            font-size: 3vw;
+            font-weight:500;
+            margin-left: 8vw;
+            color:  rgb(177, 136, 24);
+         }
+         .at4>h5{
+            font-size: 1vw;
+            margin-left: 2.4vw;
+            margin-top: 0.6vh;
+            color: rgba(0, 0, 0, 0.61);
+            font-weight: lighter;
+            line-height: 1.7vw;
+         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       .at5{
+        grid-column: 1/4;
+        margin-left: 20vw;
+        margin-right: 32vw;
+        margin-top: -12vw;
+        display: flex;
+       }
+       .at5>h1{
+            font-size: 1vw;
+            font-weight: lighter;
+            color: rgba(0, 0, 0, 0.76);
+           
+       }
+       .at5>h2{
+        font-size: 1vw;
+        margin-left: 4vw;
+        font-weight: lighter;
+        color: rgba(0, 0, 0, 0.76);
+    }
+    .at5>h3{
+        font-size: 1vw;
+        margin-left: 7.5vw;
+        font-weight: lighter;
+        color: rgba(0, 0, 0, 0.76);
+    }
+    .at5>h4{
+        font-size: 1vw;
+        margin-left: 9vw;
+        font-weight: lighter;
+        color: rgba(0, 0, 0, 0.76);
+    }
+      
+
+
+
+
+
+.serve{
+   
+    width: auto;
+    height: 20vh;
+    margin-top: -3vh;
+    text-align: center;
+    align-content: center;
+}
+.serve>h1{
+    font-size: 5vw;
+    color: rgb(177, 136, 24);
+            font-family: "Ballet", cursive;
+             font-optical-sizing: auto;
+           font-weight: 700;
+           letter-spacing: 0.4vw;
+             font-style: normal;
+             margin-bottom: -5vw;
+}
+.serve>h2{
+    font-size: 4vw;
+    font-weight:900;
+    color: rgba(0, 0, 0, 0.808);
+}
+
+
+
+
+
+
+.how{
+    width: auto;
+    height: 40vh;
+  
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.ho{
+
+ width: 22%;
+ height: 60%;
+ text-align: center;
+ align-content: center;
+}
+.ho>h1{
+    font-size: 1vw;
+    color: rgba(0, 0, 0, 0.76);
+    font-weight: lighter;
+    line-height: 1.5vw;
+}
+.hy{
+    
+    width: 22%;
+    height: 60%;
+    text-align: center;
+    align-content: center;
+}
+.hy>h1{
+    font-size: 1vw;
+    color: rgba(0, 0, 0, 0.76);
+    font-weight: lighter;
+    line-height: 1.5vw;
+}
+.hi{
+  
+    width: 22%;
+    height: 60%;
+    text-align: center;
+    align-content: center;
+}
+.hi>h1{
+    font-size: 1vw;
+    color: rgba(0, 0, 0, 0.76);
+    font-weight: lighter;
+    line-height: 1.5vw;
+}
+.ho>i{
+   font-size: 3vw;
+   color: rgb(177, 136, 24);
+   margin-bottom: 1.2vw;
+}
+.hy>i{
+    font-size: 3vw;
+    color: rgb(177, 136, 24);
+    margin-bottom: 1.2vw;
+}
+.hi>i{
+    font-size: 3vw;
+    color: rgb(177, 136, 24);
+    margin-bottom: 1.2vw;
+}
+
+.ho>h2{
+ font-size: 1.5vw;
+ letter-spacing: 0.1vw;
+ margin-bottom: 1vw;
+}
+.hi>h2{
+    font-size: 1.5vw;
+    letter-spacing: 0.1vw;
+    margin-bottom: 1vw;
+}
+.hy>h2{
+    font-size: 1.5vw;
+    letter-spacing: 0.1vw;
+    margin-bottom: 1vw;
+}
+
+
+
+.heading{
+margin-top: 1vh;
+    width: auto;
+    height: 20vh;
+    text-align: center;
+    align-content: center;
+   
+}
+
+
+
+.heading>h1{
+    font-size: 5vw;
+    color: rgb(177, 136, 24);
+            font-family: "Ballet", cursive;
+             font-optical-sizing: auto;
+           font-weight: 700;
+           letter-spacing: 0.4vw;
+             font-style: normal;
+             margin-bottom: -5vw;
+
+}
+.heading>h2{
+    font-size: 4vw;
+    font-weight:900;
+    color: rgba(0, 0, 0, 0.808);
+}
+
+
+
+
+.green{
+    display: grid;
+    margin-top: 3vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 25vh 25vh 25vh;
+}
+
+
+
+.one{
+    background: url(https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    margin-left: 21vw;
+    margin-right: -10vw;
+}
+.two{
+  margin-left: 10vw;
+  
+}
+.two>h1{
+    margin-top: 2vw;
+    font-size: 1.5vw;
+    color: rgba(0, 0, 0, 0.815);
+    margin-bottom: 1vw;
+    margin-left: 1vw;
+}
+.two>h2{
+    font-size: 1vw;
+    font-weight: lighter;
+    margin-left: 1vw;
+}
+.two>h3{
+    border: 1px solid;
+   margin-left: 1vw;
+   margin-right: 8.2vw;
+   margin-top: 1vw;
+   padding: 0.2vw;
+   background: rgb(177, 136, 24) ;
+   font-size: 1vw;
+}
+.three{
+    background: url(https://cdn.sanity.io/images/jsdrzfkj/recepedia-global-production/95baa158a15258557043eca43a7a89c29b2b6ab2-2000x2000.jpg?w=1920&h=1920&auto=format);
+    background-size: cover;
+    margin-right: 9vw;
+}
+.four{
+    margin-left: -9vw;
+    margin-right: 19vw;
+}
+.four>h1{
+    margin-top: 2vw;
+    font-size: 1.5vw;
+    color: rgba(0, 0, 0, 0.815);
+    margin-bottom: 1vw;
+    margin-left: 1vw;
+   
+}
+.four>h2{
+    font-size: 1vw;
+    font-weight: lighter;
+    margin-left: 1vw;
+}
+.four>h3{
+    border: 1px solid;
+   margin-left: 1vw;
+   margin-right: 8.2vw;
+   margin-top: 1vw;
+   padding: 0.2vw;
+   background: rgb(177, 136, 24) ;
+   font-size: 1vw;
+}
+.five{
+    margin-left: 21vw;
+    margin-right: -10vw;
+}
+.five>h1{
+    margin-top: 2vw;
+    font-size: 1.5vw;
+    color: rgba(0, 0, 0, 0.815);
+    margin-bottom: 1vw;
+    margin-left: 1vw;
+}
+.five>h2{
+    font-size: 1vw;
+    font-weight: lighter;
+    margin-left: 1vw;
+}
+.five>h3{
+    border: 1px solid;
+   margin-left: 1vw;
+   margin-right: 7.2vw;
+   margin-top: 1vw;
+   padding: 0.2vw;
+   background: rgb(177, 136, 24) ;
+   font-size: 1vw;
+}
+.six{
+    margin-left: 10vw;
+    background: url(https://images.immediate.co.uk/production/volatile/sites/30/2013/05/spaghetti-carbonara-382837d.jpg?quality=90&webp=true&resize=300,272);
+    background-size: cover;
+}
+.seven{
+    margin-right: 9vw;
+}
+.seven>h1{
+    margin-top: 2vw;
+    font-size: 1.5vw;
+    color: rgba(0, 0, 0, 0.815);
+    margin-bottom: 1vw;
+    margin-left: 1vw;
+}
+.seven>h2{
+    font-size: 1vw;
+    font-weight: lighter;
+    margin-left: 1vw;
+}
+.seven>h3{
+    border: 1px solid;
+   margin-left: 1vw;
+   margin-right: 9.2vw;
+   margin-top: 1vw;
+   padding: 0.2vw;
+   background: rgb(177, 136, 24) ;
+   font-size: 1vw;
+}
+
+.eight{
+    margin-left: -9vw;
+    margin-right: 19vw;
+    background: url(https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?quality=90&webp=true&resize=300,272);
+    background-size: cover;
+}
+.nine{
+    margin-left: 21vw;
+    background: url(https://images.immediate.co.uk/production/volatile/sites/30/2022/08/Corndogs-7832ef6.jpg?quality=90&webp=true&resize=300,272);
+    background-size: cover;
+    margin-right: -10vw;
+}
+.ten{
+    margin-left: 10vw;
+}
+.ten>h1{
+    margin-top: 2vw;
+    font-size: 1.5vw;
+    color: rgba(0, 0, 0, 0.815);
+    margin-bottom: 1vw;
+    margin-left: 1vw;
+}
+.ten>h2{
+    font-size: 1vw;
+    font-weight: lighter;
+    margin-left: 1vw;
+}
+.ten>h3{
+    border: 1px solid;
+   margin-left: 1vw;
+   margin-right: 8.2vw;
+   margin-top: 1vw;
+   padding: 0.2vw;
+   background: rgb(177, 136, 24) ;
+   font-size: 1vw;
+}
+
+
+.eleven{
+    margin-right: 9vw;
+    background: url(https://www.foodiesfeed.com/wp-content/uploads/2023/06/burger-with-melted-cheese.jpg);
+    background-size: cover;
+}
+.twelve{
+    margin-left: -9vw;
+    margin-right: 19vw;
+}
+.twelve>h1{
+    margin-top: 2vw;
+    font-size: 1.5vw;
+    color: rgba(0, 0, 0, 0.815);
+    margin-bottom: 1vw;
+    margin-left: 1vw;
+}
+.twelve>h2{
+    font-size: 1vw;
+    font-weight: lighter;
+    margin-left: 1vw;
+}
+.twelve>h3{
+    border: 1px solid;
+   margin-left: 1vw;
+   margin-right: 8.2vw;
+   margin-top: 1vw;
+   font-size: 1vw;
+   padding: 0.2vw;
+   background: rgb(177, 136, 24) ;
+}
+.twelve>h3:hover{
+      opacity: 0.5;
+}
+.two>h3:hover{
+      opacity: 0.5;
+}
+.four>h3:hover{
+      opacity: 0.5;
+}
+.five>h3:hover{
+      opacity: 0.5;
+}
+.seven>h3:hover{
+      opacity: 0.5;
+}
+.nine>h3:hover{
+      opacity: 0.5;
+}
+.ten>h3:hover{
+      opacity: 0.5;
+}
+
+
+
+
+
+
+.cheif{
+    width: auto;
+    height: 20vh;
+    margin-top: 12vh;
+    text-align: center;
+}
+.cheif>h1{
+    font-size: 5vw;
+    color: rgb(177, 136, 24);
+            font-family: "Ballet", cursive;
+             font-optical-sizing: auto;
+           font-weight: 700;
+           letter-spacing: 0.4vw;
+             font-style: normal;
+             margin-bottom: -5vw;
+}
+.cheif>h2{
+    font-size: 4vw;
+    font-weight:900;
+    color: rgba(0, 0, 0, 0.808);
+}
+
+
+
+
+
+
+
+.boxy{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 35vh 30vh;
+    gap: 2vw;
+}
+
+
+.box1{
+  margin-left:16.5vw ;
+  background: url(https://cdn.pixabay.com/photo/2023/05/16/18/16/baker-7998336_1280.jpg);
+  background-size: cover;
+  margin-right: -8vw;
+}
+.box2{
+ margin-left: 8vw;
+ background: url(https://cdn.pixabay.com/photo/2024/04/09/01/45/ai-generated-8684830_1280.png);
+ background-size: cover;
+}
+.box3{
+    margin-right: 8vw;
+    background: url(https://cdn.pixabay.com/photo/2024/02/27/16/43/ai-generated-8600461_960_720.jpg);
+    background-size: cover;
+}
+.box4{
+    margin-right:16.5vw ;
+    margin-left: -8vw;
+    background: url(https://cdn.pixabay.com/photo/2024/04/09/01/00/ai-generated-8684799_1280.png);
+    background-size: cover;
+}
+.box5{
+    grid-column: 1/5;
+    width: auto;
+    display: flex;
+    justify-content:center;
+    
+    
+    
+}
+.bb{
+
+text-align: center;
+width: 17%;
+}
+.bb>h1{
+    font-size: 1.5vw;
+    color: rgb(177, 136, 24);    
+}
+.bb>h2{
+         font-size: 1.2vw;
+         color: rgba(0, 0, 0, 0.733);
+}
+.ll>h1{
+    font-size: 1.5vw;
+    color: rgb(177, 136, 24);    
+}
+.ll>h2{
+         font-size: 1.2vw;
+         color: rgba(0, 0, 0, 0.733);
+}
+
+.ll{
+    
+    width: 17%;
+    text-align: center;
+}
+.ii{
+   
+    width: 17%;
+     text-align: center;
+}
+.ii>h1{
+    font-size: 1.5vw;
+    color: rgb(177, 136, 24);    
+}
+.ii>h2{
+         font-size: 1.2vw;
+         color: rgba(0, 0, 0, 0.733);
+}
+.rr{
+   
+    width: 17%;
+    text-align: center;
+}
+.rr>h1{
+    font-size: 1.5vw;
+    color: rgb(177, 136, 24);    
+}
+.rr>h2{
+      font-size: 1.2vw;
+         color: rgba(0, 0, 0, 0.733);
+}
+
+.ll>i{
+    font-size: 1vw;
+    padding: 0.4vw;
+}
+.rr>i{
+    font-size: 1vw;
+    padding: 0.4vw;
+}
+.bb>i{
+    font-size: 1vw;
+    padding: 0.4vw;
+}
+.ii>i{
+    font-size: 1vw;
+    padding: 0.4vw;
+}
+.ll>i:hover{
+    color: rgb(177, 136, 24);
+}
+.ii>i:hover{
+    color: rgb(177, 136, 24);
+}
+.rr>i:hover{
+    color: rgb(177, 136, 24);
+}
+.bb>i:hover{
+    color: rgb(177, 136, 24);
+}
+
+
+
+
+
+.foot{
+    margin-top: -5vw;
+width: 100%;
+height: 80vh;
+background: url(https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-1273516682.jpg?c=16x9&q=h_653,w_1160,c_fill/f_webp)rgb(48, 46, 46);
+background-blend-mode: multiply;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+position: relative;
+
+
+
+
+}   
+
+
+.foam{
+    width: 34%;
+    height: 70%;
+    border: 1px solid white;
+    position: absolute;
+    margin-top: 11vh;
+    margin-left: 20vw;
+  display: flex;
+}
+
+
+
+.tab{
+    width: 50%;
+    background: white;
+   
+    text-align: start;
+}
+
+.tab>input{
+    font-size: 1vw;
+    padding: 0.7vw;
+    margin-left: 1vw;
+   border: 1px solid white;
+}
+.wab{
+    width: 50%;
+    border: 1px solid white;
+    background: rgb(255, 255, 255);
+    text-align: start;
+}
+.wab>input{
+    font-size: 1vw;
+    padding: 0.7vw;
+    margin-left: 1vw;
+    border: 1px solid white;
+
+}
+
+    .nee{
+        width:100%;
+        height: 100vh;
+    }
+
+.tab>h1{
+font-size: 1vw;
+margin-left: 0.6vw;
+margin-top: 11vh;
+padding: 0.5vw;
+
+}
+.tab>h2{
+    font-size: 1vw;
+    margin-left: 0.6vw;
+    padding: 0.5vw;
+}
+.tab>h3{
+    font-size: 1vw;
+    margin-left: 0.6vw;
+    padding: 0.5vw;
+}
+.wab>h1{
+font-size: 1vw;
+margin-left: 0.6vw;
+margin-top: 11vh;
+padding: 0.5vw;
+}
+.wab>h2{
+    font-size: 1vw;
+    margin-left: 0.6vw;
+    padding: 0.5vw;
+}
+.wab>h3{
+    font-size: 1vw;
+    margin-left: 0.6vw;
+    padding: 0.5vw;
+}
+
+
+
+
+
+
+
+
+.heado{
+    margin-top: 2vw;
+    width: 73%;
+    height: 20vh;
+    position: absolute;
+   z-index: 1;
+   text-align: center;
+ 
+}
+.heado>h1{
+    font-size: 5vw;
+    color: rgb(177, 136, 24);
+            font-family: "Ballet", cursive;
+             font-optical-sizing: auto;
+           font-weight: 700;
+           letter-spacing: 0.4vw;
+             font-style: normal;
+             margin-bottom: -5vw;
+}
+.heado>h2{
+    color: rgba(0, 0, 0, 0.767);
+    font-size: 3vw;
+    font-weight: bolder;
+}
+.faedo{
+    width: 74%;
+    height: 20vh;
+    z-index: 1;
+    text-align: center;
+   
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 3vw;
+}
+.faedo>h1{
+    color: aliceblue;
+    border: 1px solid white;
+    padding: 0.5vw;
+   margin-left: 28vw;
+   margin-right: 28vw;
+   background: rgb(177, 136, 24);
+   border-radius: 1vw;
+}
+.faedo>h1:hover{
+    cursor: pointer;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+.june{
+ background: rgb(172, 142, 61);
+  width: 100%;
+ height: 35vh;
+ display: flex;
+ justify-content: center;
+ align-content: center;
+ 
+}
+.august{
+  margin-top: 4vw;
+  text-align: center;
+   width: 30%;
+   
+   height: 50%;
+   color: black;
+
+}
+
+.august>h1{
+  font-size: 1vw;
+  margin-top: 0.5vw;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.august>h2{
+  font-size: 1vw;
+  margin-top: 0.7vw;
+}
+.august>h3{
+  font-size: 1vw;
+  margin-top: 0.7vw;
+}
+.august>h4{
+  font-size: 1vw;
+  margin-top: 0.7vw;
+}
+.august>h5{
+  font-size: 1vw;
+  margin-top: 0.7vw;
+}
+.august>h6{
+  font-size: 1vw;
+  margin-top: 0.7vw;
+}
+.july{
+   width: 30%;
+ 
+   height: 50%;
+   margin-top: 4vw;
+   text-align: center;
+   color: black;
+   font-weight: 500;
+   
+   
+}
+.july>p{
+  font-size: 1vw;
+}
+
+.sap{
+   width: 30%;
+
+   text-align: center;
+   height: 50%;
+   margin-top: 4vw;
+   
+}
+.sap>i{
+  font-size: 1vw;
+  color: black;
+  margin-left: 1vw;
+}
+.sap>h1{
+font-size: 1.4vw;
+margin-top: 1vw;
+margin-bottom: -1vw;
+}
+
+.sap>input{
+    margin-left: 9vw;
+    font-size: 1vw;
+    padding: 0.5vw;
+ 
+}
+</style>
+<body>
+ <div class="container">
+
+
+    <div class="header">
+        <i class="fe fa-solid fa-phone"></i>
+        <h1>+ 1231 2355 6789</h1>
+        <i class="he fa-regular fa-paper-plane"></i>
+        <h2>youremail@email.com</h2>
+        <h3>Open hours: Monday - Sunday   8:00AM - 9:00PM</h3>
+    </div>
+
+
+    <div class="main">
+        <h1>Feliciano</h1>
+        <a class="link"href="">Home</a>
+        <a class="li"href="">About</a>
+        <a class="li"href="">Menu</a>
+        <a class="li"href="">Stories</a>
+        <a class="li"href="">Contact</a>
+        <button class="hum" >Book a Table</button>
+    </div>
+       
+      
+
+    <div class="mid"></div>
+
+
+    <div class="contain">
+        <h1><i>Feliciano</i></h1>
+        <h2>Delicious & Healthy food</h2>
+    </div>
+
+
+
+     <div class="middle"></div>
+
+
+
+ </div>
+
+    <div class="card">
+       <div class="card1">
+       <img src="https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+       <h1>Grilled Beef with potatoes</h1>
+       <h2>Meat, Potatoes, Rice, Tomatoe</h2>
+       </div>
+       <div class="card2">
+        <img src="https://images.pexels.com/photos/696218/pexels-photo-696218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <h1>Grilled Beef with potatoes</h1>
+        <h2>Meat, Potatoes, Rice, Tomatoe</h2>
+       </div>
+       <div class="card3">
+        <img src="https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <h1>Grilled Beef with potatoes</h1>
+        <h2>Meat, Potatoes, Rice, Tomatoe</h2>
+       </div>
+       <div class="card4">
+        <img src="https://images.pexels.com/photos/776538/pexels-photo-776538.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <h1>Grilled Beef with potatoes</h1>
+        <h2>Meat, Potatoes, Rice, Tomatoe</h2>
+       </div>
+    </div>
+
+
+
+
+
+      <div class="great">
+         <div class="gre at1"></div>
+         <div class="gre at2"></div>
+         <div class="gre at3">
+            <h1>AbOUt</h1>
+            <h2>Feliciano</h2>
+            <h3>Restaurant</h3>
+            <h4>A small river named Duden flows by their place and<br>supplies it with the necessary regelialia. It is a<br>paradisematic country, in which roasted parts of<br>sentences fly into your mouth.</h4>
+            <h5>Mon - Fri <b>8 AM - 11 PM</b></h5>
+            <h6>+ 1-978-123-4567</h6>
+         </div>
+         <div class="gre at4">
+            <h1>18</h1>
+            <h2>100</h2>
+            <h3>50</h3>
+            <h4>15,000</h4>
+            <h5>A small river named Duden<br>flows by their place and<br>supplies it with the necessary<br>regelialia.</h5>
+         </div>
+         <div class="gre at5">
+            <h1>Years of Experienced</h1>
+            <h2>Menus/Dish</h2>
+            <h3>Staffs</h3>
+            <h4>Happy Customers</h4>
+
+         </div>
+      </div>
+
+
+      <div class="serve">
+        <h1>Services</h1>
+        <h2>Catering Services</h2>
+      </div>
+
+
+
+
+
+
+         <div class="how">
+            <div class="ho">
+                <i class="fa-solid fa-cake-candles"></i>
+                <h2>Birthday Party</h2>
+                <h1>Even the all-powerful Pointing has no<br>control about the blind texts it is an<br>almost unorthographic.</h1>
+            </div>
+            <div class="hy">
+                <i class="fa-solid fa-champagne-glasses"></i>
+                <h2>Business Meetings</h2>
+                <h1>Even the all-powerful Pointing has no<br>control about the blind texts it is an<br>almost unorthographic.</h1>
+            </div>
+            <div class="hi">
+                <i class="fa-solid fa-plate-wheat"></i>
+                <h2>Wedding Party</h2>
+                <h1>Even the all-powerful Pointing has no<br>control about the blind texts it is an<br>almost unorthographic.</h1>
+            </div>
+         </div>
+
+
+
+
+
+         <div class="heading">
+            <h1>Specialties</h1>
+            <h2>Our Menu</h2>
+         </div>
+
+
+
+
+
+        <div class="green">
+            <div class="gr one"></div>
+            <div class="gr two">
+                <h1>Grilled Beef<br>with potatoes</h1>
+                <h2>Meat, Potatoes, Rice,<br>Tomatoe</h2>
+                <h3>order Now</h3>
+            </div>
+            <div class="gr three"></div>
+            <div class="gr four">
+                <h1>Grilled Beef<br>with potatoes</h1>
+                <h2>Meat, Potatoes, Rice,<br>Tomatoe</h2>
+                <h3>order Now</h3>
+            </div>
+            <div class="gr five">
+                <h1>Grilled Beef<br>with potatoes</h1>
+                <h2>Meat, Potatoes, Rice,<br>Tomatoe</h2>
+                <h3>order Now</h3>
+            </div>
+            <div class="gr six"></div>
+            <div class="gr seven"> <h1>Grilled Beef<br>with potatoes</h1>
+                <h2>Meat, Potatoes, Rice,<br>Tomatoe</h2>
+                <h3>order Now</h3></div>
+            <div class="gr eight"></div>
+            <div class="gr nine"></div>
+            <div class="gr ten">
+                <h1>Grilled Beef<br>with potatoes</h1>
+                <h2>Meat, Potatoes, Rice,<br>Tomatoe</h2>
+                <h3>order Now</h3>
+            </div>
+            <div class="gr eleven"></div>
+            <div class="gr twelve">
+                <h1>Grilled Beef<br>with potatoes</h1>
+                <h2>Meat, Potatoes, Rice,<br>Tomatoe</h2>
+                <h3>order Now</h3>
+            </div>
+        </div>
+
+
+
+     
+
+         <div class="cheif">
+            <h1>Chef</h1>
+            <h2>Our Master Chef</h2>
+         </div>
+
+
+
+
+<div class="boxy">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+
+
+
+
+
+
+
+
+    <div class="box box5">
+          <div class="bb">
+            <h1>John Smooth</h1>
+            <h2>Restaurant Owner</h2>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-g"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="rr">
+            <h1>Rebeca Welson</h1>
+            <h2>Head Chef</h2>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-g"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="ii">
+            <h1>Kharl Branyt</h1>
+            <h2>Chef</h2>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-g"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="ll">
+            <h1>Luke Simon</h1>
+            <h2>Chef</h2>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-g"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+
+
+
+
+    </div>
+
+
+</div>
+
+
+
+
+
+<div class="foot">
+    <div class="heado">
+        <h1>Book a table</h1>
+        <h2>Make Reservation</h2>
+    </div>
+  <div class="foam">
+   
+   
+   <div class="tab"> 
+    <h1>Name</h1>
+    <input type="text" placeholder="your name"><br>
+    <h2>Phone</h2>
+    <input type="text" placeholder="phone number">  <br>
+    <h3>Time</h3> 
+    <input type="text" placeholder="time"><br>
+     </div>
+
+
+     <div class="wab">
+        <h1>Email</h1>
+        <input type="text"placeholder="email"><br>
+        <h2>Phone</h2>
+        <input type="text"placeholder="phone"> <br>  
+        <h3>Person</h3>
+        <input type="text" placeholder="person"><br>
+     </div>
+  </div>
+       <div class="faedo">
+        <h1>Make a Reservation</h1>
+       </div>
+
+
+</div>
+
+
+
+
+
+
+<div class="june">
+    <div class="july">
+     <p> Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, dolore! ipsum dolor sit amet consectetur adipisicing elit. Aperiam, obcaecati?  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta distinctio dolor cumque eius natus fugit nesciunt! Veniam nisi repellendus, sunt reprehenderit, repellat dolorum enim minima cumque aliquid, dolorem rerum perspiciatis aperiam. Deserunt quae reprehenderit repudiandae molestias ullam consectetur voluptate? Impedit debitis nesciunt quae sed magnam ipsa, non neque? Eius, magnam.</p>
+    </div>
+  <div class="august">
+     <h1>contact</h1>
+     <h2>more</h2>
+     <h3>learn</h3>
+     <h4>blog</h4>
+     <h5>booking</h5>
+  </div>
+  <div class="sap">
+    <i class="fa-brands fa-facebook-f d-block mt-5"></i>
+    <i class="fa-brands fa-instagram d-block mt-3"></i>
+    <i class="fa-brands fa-twitter d-block mt-3"></i>
+    <h1>name</h1><br>
+    <input type="text" placeholder="name">
+    <h1>email</h1><br>
+    <input type="text" placeholder="email">
+      
+  </div>
+
+
+
+</div>
+
+
+
+
+
+
+      
+
+</body>
+</html>
