@@ -742,11 +742,13 @@ margin-top: 1vh;
 .two>h3{
     border: 1px solid;
    margin-left: 1vw;
-   margin-right: 8.2vw;
+   margin-right: 9vw;
+   padding: 3px;
+   border-radius: 5px;
    margin-top: 1vw;
-   padding: 0.2vw;
+   font-size: 0.9vw;
+    
    background: rgb(177, 136, 24) ;
-   font-size: 1vw;
 }
 .three{
     background: url(https://cdn.sanity.io/images/jsdrzfkj/recepedia-global-production/95baa158a15258557043eca43a7a89c29b2b6ab2-2000x2000.jpg?w=1920&h=1920&auto=format);
@@ -773,11 +775,13 @@ margin-top: 1vh;
 .four>h3{
     border: 1px solid;
    margin-left: 1vw;
-   margin-right: 8.2vw;
+   margin-right: 9vw;
+   padding: 3px;
+   border-radius: 5px;
    margin-top: 1vw;
-   padding: 0.2vw;
+   font-size: 0.9vw;
+    
    background: rgb(177, 136, 24) ;
-   font-size: 1vw;
 }
 .five{
     margin-left: 21vw;
@@ -798,11 +802,13 @@ margin-top: 1vh;
 .five>h3{
     border: 1px solid;
    margin-left: 1vw;
-   margin-right: 7.2vw;
+   margin-right: 8vw;
+   padding: 3px;
+   border-radius: 5px;
    margin-top: 1vw;
-   padding: 0.2vw;
+   font-size: 0.9vw;
+    
    background: rgb(177, 136, 24) ;
-   font-size: 1vw;
 }
 .six{
     margin-left: 10vw;
@@ -827,11 +833,13 @@ margin-top: 1vh;
 .seven>h3{
     border: 1px solid;
    margin-left: 1vw;
-   margin-right: 9.2vw;
+   margin-right: 9vw;
+   padding: 3px;
+   border-radius: 5px;
    margin-top: 1vw;
-   padding: 0.2vw;
+   font-size: 0.9vw;
+    
    background: rgb(177, 136, 24) ;
-   font-size: 1vw;
 }
 
 .eight{
@@ -864,11 +872,13 @@ margin-top: 1vh;
 .ten>h3{
     border: 1px solid;
    margin-left: 1vw;
-   margin-right: 8.2vw;
+   margin-right: 9vw;
+   padding: 3px;
+   border-radius: 5px;
    margin-top: 1vw;
-   padding: 0.2vw;
+   font-size: 0.9vw;
+    
    background: rgb(177, 136, 24) ;
-   font-size: 1vw;
 }
 
 
@@ -896,10 +906,12 @@ margin-top: 1vh;
 .twelve>h3{
     border: 1px solid;
    margin-left: 1vw;
-   margin-right: 8.2vw;
+   margin-right: 9vw;
+   padding: 3px;
+   border-radius: 5px;
    margin-top: 1vw;
-   font-size: 1vw;
-   padding: 0.2vw;
+   font-size: 0.9vw;
+    
    background: rgb(177, 136, 24) ;
 }
 .twelve>h3:hover{
@@ -1338,6 +1350,62 @@ margin-bottom: -1vw;
     padding: 0.5vw;
  
 }
+
+
+
+
+
+
+
+
+
+
+
+.containering{
+    width: 100%;
+    display: flex;
+    height: 400px;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 100px;
+  justify-content: center;
+  
+}
+
+.arrow{
+    height: 100px;
+    width: 100px;
+ font-size: 40px;
+ border: none;
+ border-radius: 50%;
+ box-shadow: 0px 1px 10px rgb(0, 0, 0);
+}
+.arrow-left{
+    height: 100px;
+    width: 100px;
+ font-size: 40px;
+ border: none;
+ border-radius: 50%;
+ box-shadow: 0px 1px 10px rgb(0, 0, 0);
+}
+.frame{
+ width: 650px;
+ height: 400px;
+ border-radius: 30px;
+  overflow: hidden; 
+  box-shadow: 0px 1px 10px black;
+}
+.card-image{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+
+}
+.slider{
+    display: flex;
+    transition: all 1s ease;
+   
+}
 </style>
 <body>
  <div class="container">
@@ -1433,6 +1501,37 @@ margin-bottom: -1vw;
 
          </div>
       </div>
+
+
+      <h1 style="margin-bottom: 70px;  text-align:center ; font-size: 40px; color: rgba(0, 0, 0, 0.726);  "> food items slider </h1>
+
+
+
+      
+      <div class="containering">
+      
+        <button class="arrow-left fa-solid fa-arrow-right fa-rotate-180"></button>
+        <div class="frame">
+            <div class="slider">
+                <img src="https://images.unsplash.com/photo-1551326844-4df70f78d0e9?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-image">
+                <img src="https://images.unsplash.com/photo-1568716508386-cda5cdec6827?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-image">
+                <img src="https://images.unsplash.com/reserve/EnF7DhHROS8OMEp2pCkx_Dufer%20food%20overhead%20hig%20res.jpg?q=80&w=2078&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-image">
+                <img src="https://images.unsplash.com/photo-1597699401474-e8714c1b7879?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-image">
+                <img src="https://images.unsplash.com/photo-1598214886806-c87b84b7078b?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-image">
+                 
+            </div>
+        </div>
+        <button class="arrow fa-solid fa-arrow-right"></button>    
+      </div>
+
+
+
+
+
+
+
+
+
 
 
       <div class="serve">
@@ -1589,33 +1688,29 @@ margin-bottom: -1vw;
         <h1>Book a table</h1>
         <h2>Make Reservation</h2>
     </div>
-  <div class="foam">
-   
-   
-   <div class="tab"> 
-    <h1>Name</h1>
-    <input type="text" placeholder="your name"><br>
-    <h2>Phone</h2>
-    <input type="text" placeholder="phone number">  <br>
-    <h3>Time</h3> 
-    <input type="text" placeholder="time"><br>
-     </div>
+    <div class="foam">
+        <div class="tab"> 
+            <h1>Name</h1>
+            <input type="text" id="name" placeholder="your name"><br>
+            <h2>Phone</h2>
+            <input type="text" id="phone" placeholder="phone number"><br>
+            <h3>Time</h3>
+            <input type="text" id="time" placeholder="time"><br>
+        </div>
 
+        <div class="wab">
+            <h1>Email</h1>
+            <input type="text" id="email" placeholder="email"><br>
+            <h2>Address</h2>
+            <input type="text" id="phone2" placeholder="phone"><br>  
+            <h3>Person</h3>
+            <input type="text" id="person" placeholder="person"><br>
+        </div>
+    </div>
 
-     <div class="wab">
-        <h1>Email</h1>
-        <input type="text"placeholder="email"><br>
-        <h2>Phone</h2>
-        <input type="text"placeholder="phone"> <br>  
-        <h3>Person</h3>
-        <input type="text" placeholder="person"><br>
-     </div>
-  </div>
-       <div class="faedo">
-        <h1>Make a Reservation</h1>
-       </div>
-
-
+    <div class="faedo">
+        <button id="submitBtn" style="padding: 8px; border-radius:10px ; color: black; background-color: yellow; font-size: 17px; ">Make a Reservation</button>
+    </div>
 </div>
 
 
@@ -1638,10 +1733,7 @@ margin-bottom: -1vw;
     <i class="fa-brands fa-facebook-f d-block mt-5"></i>
     <i class="fa-brands fa-instagram d-block mt-3"></i>
     <i class="fa-brands fa-twitter d-block mt-3"></i>
-    <h1>name</h1><br>
-    <input type="text" placeholder="name">
-    <h1>email</h1><br>
-    <input type="text" placeholder="email">
+ 
       
   </div>
 
@@ -1650,7 +1742,92 @@ margin-bottom: -1vw;
 </div>
 
 
+<script>
 
+    let  currentindex = 0
+    const left = document.querySelector('.arrow-left');
+    const right = document.querySelector('.arrow');
+    const slider = document.querySelector('.slider');
+    const images = document.querySelectorAll('.slider img');  
+    let slideNumber = 1;
+    const length = images.length;
+    const nextSlide = () => {
+  if (slideNumber < length) {
+    slider.style.transform = `translateX(-${slideNumber * 650}px)`; 
+    slideNumber++;
+  } else {
+    getfirstSlide();
+  }
+  };
+    const previousSlide = () => {
+   if (slideNumber > 1) {
+   slider.style.transform = `translateX(-${(slideNumber - 2) * 650}px)`; 
+   slideNumber--;
+  } else {
+   getlastSlide();
+  }
+  };
+  const getfirstSlide = () => {
+  slider.style.transform = `translateX(0px)`; 
+  slideNumber = 1;
+  };
+  const getlastSlide = () => {
+  slider.style.transform = `translateX(-${(length - 1) * 650}px)`; 
+  slideNumber = length;
+  };
+  right.addEventListener('click', nextSlide);
+  left.addEventListener('click', previousSlide); 
+
+  setInterval(() => {
+  nextSlide();
+  }, 3000); 
+
+
+
+
+
+
+
+
+  document.getElementById('submitBtn').addEventListener('click', function() {
+    // Get form data
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const time = document.getElementById('time').value;
+    const email = document.getElementById('email').value;
+    const phone2 = document.getElementById('phone2').value;
+    const person = document.getElementById('person').value;
+
+    // Validate the input data
+    if (name && phone && time && email && phone2 && person) {
+        // Create an object to hold the form data
+        const reservationData = {
+            name: name,
+            phone: phone,
+            time: time,
+            email: email,
+            phone2: phone2,
+            person: person
+        };
+
+        // Retrieve existing reservations from local storage (or an empty array if none exists)
+        let reservations = JSON.parse(localStorage.getItem('reservations')) || [];
+
+        // Add the new reservation to the array
+        reservations.push(reservationData);
+
+        // Save the updated array back to local storage
+        localStorage.setItem('reservations', JSON.stringify(reservations));
+
+        // Optionally, you can clear the form or show a success message
+        alert('Reservation has been saved!');
+        document.querySelector('.foam').reset(); // Clears the form
+    } else {
+        alert('Please fill out all fields.');
+    }
+});
+
+</script>
 
 
 
@@ -1658,3 +1835,7 @@ margin-bottom: -1vw;
 
 </body>
 </html>
+
+
+
+
